@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://podcat.example.com/schemas/about.json",
+  "title": "AboutSection",
+  "description": "About page content section for Podcat website",
+  "type": "object",
+  "required": ["id", "title", "content", "type"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Section identifier in kebab-case",
+      "pattern": "^[a-z]+(-[a-z]+)*$"
+    },
+    "title": {
+      "type": "string",
+      "description": "Section heading in Traditional Chinese",
+      "minLength": 1,
+      "maxLength": 50
+    },
+    "content": {
+      "type": "string",
+      "description": "Section content (100-500 characters recommended)",
+      "minLength": 1
+    },
+    "type": {
+      "type": "string",
+      "description": "Section type for styling",
+      "enum": ["intro", "team", "mission", "contact"]
+    }
+  },
+  "additionalProperties": false,
+  "examples": [
+    {
+      "id": "intro",
+      "title": "關於 Podcat",
+      "content": "Podcat 是一個專注於程式語言發展、軟體工程實踐與技術創新的播客節目。我們致力於為開發者帶來深度技術對話與前沿洞察。",
+      "type": "intro"
+    },
+    {
+      "id": "mission",
+      "title": "我們的使命",
+      "content": "透過高品質的技術內容，連結全球華語開發者社群，分享程式語言設計哲學、工程最佳實踐，推動技術知識共享。",
+      "type": "mission"
+    }
+  ]
+}
