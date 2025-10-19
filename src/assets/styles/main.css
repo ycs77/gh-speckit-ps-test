@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family:
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      "Microsoft JhengHei",  /* Windows Traditional Chinese */
+      "PingFang TC",          /* macOS/iOS Traditional Chinese */
+      "Noto Sans TC",         /* Android Traditional Chinese */
+      sans-serif;
+  }
+}

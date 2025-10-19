@@ -244,6 +244,11 @@ Tailwind CSS 4 已透過 `@tailwindcss/vite` 整合。
 }
 ```
 
+**配置說明**:
+- Tailwind CSS 4 使用簡單的 `@import` 方式
+- 無需 `tailwind.config.ts` 檔案
+- 使用 Tailwind 預設斷點，零配置即可使用
+
 **在元件中使用**:
 ```vue
 <template>
@@ -255,11 +260,16 @@ Tailwind CSS 4 已透過 `@tailwindcss/vite` 整合。
 
 ### 響應式斷點
 
+使用 Tailwind CSS 預設斷點（Mobile-first）：
+
 | 斷點 | 最小寬度 | 目標裝置 |
 |------|----------|----------|
-| `sm:` | 320px | 手機 |
+| 無前綴 | 0px | 手機（所有裝置） |
+| `sm:` | 640px | 大型手機 |
 | `md:` | 768px | 平板 |
-| `lg:` | 1280px | 桌面 |
+| `lg:` | 1024px | 筆記型電腦 |
+| `xl:` | 1280px | 桌面 |
+| `2xl:` | 1536px | 大型桌面 |
 
 **範例**:
 ```html
@@ -384,7 +394,8 @@ yarn install
 
 **解決方案**:
 - 確認 `src/assets/styles/main.css` 已在 `main.ts` 中匯入
-- 檢查 `tailwind.config.ts` 的 `content` 設定包含所有 `.vue` 檔案
+- 檢查 `main.css` 第一行是否為 `@import "tailwindcss";`
+- 確保 Vite 配置包含 `@tailwindcss/vite` plugin
 - 重新啟動開發伺服器
 
 ### 問題: Vue Router 404 錯誤 (部署後)

@@ -91,20 +91,14 @@ export default {
 ## R2: Tailwind CSS 4 Responsive Breakpoints
 
 ### Decision
-Map spec requirements to **custom Tailwind breakpoints**: `sm: 320px`, `md: 768px`, `lg: 1280px`.
+Use **Tailwind CSS 4 default breakpoints** for simplicity: `sm: 640px`, `md: 768px`, `lg: 1024px`, `xl: 1280px`, `2xl: 1536px`.
 
 ### Implementation
-```typescript
-// tailwind.config.ts
-export default {
-  theme: {
-    screens: {
-      'sm': '320px',   // Mobile (spec: 320px-480px)
-      'md': '768px',   // Tablet (spec: 768px-1024px)
-      'lg': '1280px'   // Desktop (spec: 1280px+)
-    }
-  }
-}
+```css
+/* src/assets/styles/main.css */
+@import "tailwindcss";
+
+/* No custom configuration needed - using Tailwind defaults */
 ```
 
 ### Usage Example
@@ -119,12 +113,14 @@ export default {
 ```
 
 ### Rationale
-- Tailwind default breakpoints (640px, 768px, 1024px, 1280px) don't align with spec's 320px minimum
-- Mobile-first approach: base styles for 320px, `md:` prefix for ≥768px, `lg:` for ≥1280px
-- Constitution requires 320px-480px (mobile), 768px-1024px (tablet), 1280px+ (desktop)
+- Tailwind CSS 4 default breakpoints (sm: 640px, md: 768px, lg: 1024px, xl: 1280px) cover all common devices
+- Mobile-first approach: base styles work from 320px+, breakpoints add responsive enhancements
+- Zero configuration needed - keeps the project simple and maintainable
+- Base styles without prefixes automatically handle small mobile devices (320px+)
+- Industry-standard breakpoints aligned with common device sizes
 
 ### Alternatives Considered
-- **Tailwind defaults unchanged**: Misses 320px-640px mobile range (spec violation)
+- **Custom breakpoints**: Adds unnecessary complexity when defaults work well
 - **Custom CSS media queries**: Verbose, defeats Tailwind utility purpose
 - **Container queries**: Not universally supported in target browsers (Safari 16+)
 

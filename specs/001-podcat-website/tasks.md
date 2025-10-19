@@ -20,15 +20,15 @@
 
 **Purpose**: Project initialization and basic structure
 
-- [ ] T001 Initialize Vite 7 + Vue 3.5 + TypeScript project with package.json at repository root
-- [ ] T002 Install dependencies: vue@3.5.22, vue-router@4.6.3, vite@7.1.10, @vitejs/plugin-vue@6.0.1, vite-plugin-pages@0.33.1, typescript@5.9.3, tailwindcss@4.1.14, @tailwindcss/vite@4.1.14
-- [ ] T003 Create project directory structure: src/components/, src/pages/, src/data/, src/types/, src/router/, src/assets/styles/, src/assets/images/, public/
-- [ ] T004 Configure vite.config.ts with Vue plugin, Tailwind plugin, and vite-plugin-pages for file-based routing
-- [ ] T005 [P] Configure tailwind.config.ts with custom breakpoints (sm:320px, md:768px, lg:1280px)
-- [ ] T006 [P] Configure tsconfig.json with ES2020 target, strict mode, and path aliases
-- [ ] T007 [P] Create src/assets/styles/main.css with Tailwind imports and Traditional Chinese font stack
-- [ ] T008 [P] Create index.html with `<html lang="zh-Hant">` and viewport meta tag
-- [ ] T009 [P] Create public/favicon.ico placeholder
+- [X] T001 Initialize Vite 7 + Vue 3.5 + TypeScript project with package.json at repository root
+- [X] T002 Install dependencies: vue@3.5.22, vue-router@4.6.3, vite@7.1.10, @vitejs/plugin-vue@6.0.1, vite-plugin-pages@0.33.1, typescript@5.9.3, tailwindcss@4.1.14, @tailwindcss/vite@4.1.14
+- [X] T003 Create project directory structure: src/components/, src/pages/, src/data/, src/types/, src/router/, src/assets/styles/, src/assets/images/, public/
+- [X] T004 Configure vite.config.ts with Vue plugin, Tailwind plugin, and vite-plugin-pages for file-based routing
+- [X] T005 [P] Configure tailwind.config.ts with custom breakpoints (sm:320px, md:768px, lg:1280px)
+- [X] T006 [P] Configure tsconfig.json with ES2020 target, strict mode, and path aliases
+- [X] T007 [P] Create src/assets/styles/main.css with Tailwind imports and Traditional Chinese font stack
+- [X] T008 [P] Create index.html with `<html lang="zh-Hant">` and viewport meta tag
+- [X] T009 [P] Create public/favicon.ico placeholder
 
 ---
 
@@ -38,14 +38,14 @@
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T010 [P] Create Episode TypeScript interface in src/types/Episode.ts (id, title, date, description, episodeNumber)
-- [ ] T011 [P] Create FAQItem TypeScript interface in src/types/FAQ.ts (id, question, answer, category)
-- [ ] T012 [P] Create AboutSection TypeScript interface in src/types/About.ts (id, title, content, type)
-- [ ] T013 Setup Vue Router with file-based routing in src/router/index.ts using vite-plugin-pages
-- [ ] T014 Create root App.vue component with router-view, skip link, and semantic HTML structure
-- [ ] T015 Create main.ts entry point with Vue app initialization, router, and main.css import
-- [ ] T016 [P] Create AppHeader.vue layout component in src/components/layout/ with navigation, logo, and ARIA labels
-- [ ] T017 [P] Create AppFooter.vue layout component in src/components/layout/ with copyright and links
+- [X] T010 [P] Create Episode TypeScript interface in src/types/Episode.ts (id, title, date, description, episodeNumber)
+- [X] T011 [P] Create FAQItem TypeScript interface in src/types/FAQ.ts (id, question, answer, category)
+- [X] T012 [P] Create AboutSection TypeScript interface in src/types/About.ts (id, title, content, type)
+- [X] T013 Setup Vue Router with file-based routing in src/router/index.ts using vite-plugin-pages
+- [X] T014 Create root App.vue component with router-view, skip link, and semantic HTML structure
+- [X] T015 Create main.ts entry point with Vue app initialization, router, and main.css import
+- [X] T016 [P] Create AppHeader.vue layout component in src/components/layout/ with navigation, logo, and ARIA labels
+- [X] T017 [P] Create AppFooter.vue layout component in src/components/layout/ with copyright and links
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 
@@ -59,17 +59,17 @@
 
 ### Implementation for User Story 1
 
-- [ ] T018 [P] [US1] Create 20 episode data objects in src/data/episodes.ts following Episode interface and episode.schema.json
-- [ ] T019 [P] [US1] Implement getRecentEpisodes helper function in src/data/episodes.ts to return 3 most recent episodes sorted by date
-- [ ] T020 [P] [US1] Create EpisodeCard.vue component in src/components/episodes/ with semantic HTML, date formatting, and accessibility attributes
-- [ ] T021 [P] [US1] Create HeroSection.vue component in src/components/home/ with SVG graphic placeholder, podcast name, and modern design
-- [ ] T022 [P] [US1] Create EpisodePreview.vue component in src/components/home/ displaying 3 recent episodes using EpisodeCard
-- [ ] T023 [US1] Create index.vue page in src/pages/ for landing page combining HeroSection and EpisodePreview
-- [ ] T024 [US1] Create episodes.vue page in src/pages/ for episode list displaying all 20 episodes with EpisodeCard
-- [ ] T025 [US1] Add responsive Tailwind styles to EpisodeCard.vue for mobile (320px), tablet (768px), desktop (1280px)
-- [ ] T026 [US1] Add responsive Tailwind styles to HeroSection.vue with vibrant colors and high contrast design
-- [ ] T027 [US1] Optimize SVG hero graphic manually using SVGOMG and inline in HeroSection.vue
-- [ ] T028 [US1] Add WCAG 2.1 AA compliance: semantic tags, ARIA attributes, keyboard focus indicators, skip link functionality
+- [X] T018 [P] [US1] Create 20 episode data objects in src/data/episodes.ts following Episode interface and episode.schema.json
+- [X] T019 [P] [US1] Implement getRecentEpisodes helper function in src/data/episodes.ts to return 3 most recent episodes sorted by date
+- [X] T020 [P] [US1] Create EpisodeCard.vue component in src/components/episodes/ with semantic HTML, date formatting, and accessibility attributes
+- [X] T021 [P] [US1] Create HeroSection.vue component in src/components/home/ with SVG graphic placeholder, podcast name, and modern design
+- [X] T022 [P] [US1] Create EpisodePreview.vue component in src/components/home/ displaying 3 recent episodes using EpisodeCard
+- [X] T023 [US1] Create index.vue page in src/pages/ for landing page combining HeroSection and EpisodePreview
+- [X] T024 [US1] Create episodes.vue page in src/pages/ for episode list displaying all 20 episodes with EpisodeCard
+- [X] T025 [US1] Add responsive Tailwind styles to EpisodeCard.vue for mobile (320px), tablet (768px), desktop (1280px)
+- [X] T026 [US1] Add responsive Tailwind styles to HeroSection.vue with vibrant colors and high contrast design
+- [X] T027 [US1] Optimize SVG hero graphic manually using SVGOMG and inline in HeroSection.vue
+- [X] T028 [US1] Add WCAG 2.1 AA compliance: semantic tags, ARIA attributes, keyboard focus indicators, skip link functionality
 - [ ] T029 [US1] Verify color contrast ratios ≥4.5:1 for all text in episode components using browser DevTools
 - [ ] T030 [US1] Test responsive layout at breakpoints 320px, 768px, 1280px using Chrome DevTools Device Toolbar
 - [ ] T031 [US1] Test keyboard navigation: Tab through all links, verify focus indicators visible
@@ -87,11 +87,11 @@
 
 ### Implementation for User Story 2
 
-- [ ] T033 [P] [US2] Create 4 about section data objects in src/data/about.ts following AboutSection interface and about.schema.json (intro, mission, team, contact)
-- [ ] T034 [P] [US2] Create AboutSection.vue component in src/components/about/ with semantic HTML and type-based styling
-- [ ] T035 [US2] Create about.vue page in src/pages/ rendering all 4 AboutSection components
-- [ ] T036 [US2] Add responsive Tailwind styles to AboutSection.vue for mobile, tablet, desktop breakpoints
-- [ ] T037 [US2] Add WCAG 2.1 AA compliance: heading hierarchy (h1 → h2), semantic sections, ARIA landmarks
+- [X] T033 [P] [US2] Create 4 about section data objects in src/data/about.ts following AboutSection interface and about.schema.json (intro, mission, team, contact)
+- [X] T034 [P] [US2] Create AboutSection.vue component in src/components/about/ with semantic HTML and type-based styling
+- [X] T035 [US2] Create about.vue page in src/pages/ rendering all 4 AboutSection components
+- [X] T036 [US2] Add responsive Tailwind styles to AboutSection.vue for mobile, tablet, desktop breakpoints
+- [X] T037 [US2] Add WCAG 2.1 AA compliance: heading hierarchy (h1 → h2), semantic sections, ARIA landmarks
 - [ ] T038 [US2] Test keyboard navigation and screen reader compatibility for about.vue page
 - [ ] T039 [US2] Run Lighthouse accessibility audit for about.vue page (target score ≥90)
 
@@ -107,12 +107,12 @@
 
 ### Implementation for User Story 3
 
-- [ ] T040 [P] [US3] Create 8-12 FAQ item data objects in src/data/faq.ts following FAQItem interface and faq.schema.json
-- [ ] T041 [P] [US3] Implement getFAQByCategory helper function in src/data/faq.ts for optional category grouping
-- [ ] T042 [P] [US3] Create FaqList.vue component in src/components/faq/ displaying static FAQ list (no accordion/collapse)
-- [ ] T043 [US3] Create faq.vue page in src/pages/ rendering FaqList component
-- [ ] T044 [US3] Add responsive Tailwind styles to FaqList.vue with clear visual hierarchy and readability
-- [ ] T045 [US3] Add WCAG 2.1 AA compliance: semantic HTML (dl/dt/dd or article structure), clear question-answer association
+- [X] T040 [P] [US3] Create 8-12 FAQ item data objects in src/data/faq.ts following FAQItem interface and faq.schema.json
+- [X] T041 [P] [US3] Implement getFAQByCategory helper function in src/data/faq.ts for optional category grouping
+- [X] T042 [P] [US3] Create FaqList.vue component in src/components/faq/ displaying static FAQ list (no accordion/collapse)
+- [X] T043 [US3] Create faq.vue page in src/pages/ rendering FaqList component
+- [X] T044 [US3] Add responsive Tailwind styles to FaqList.vue with clear visual hierarchy and readability
+- [X] T045 [US3] Add WCAG 2.1 AA compliance: semantic HTML (dl/dt/dd or article structure), clear question-answer association
 - [ ] T046 [US3] Test responsive layout for FAQ items at all breakpoints (320px, 768px, 1280px)
 - [ ] T047 [US3] Run Lighthouse accessibility audit for faq.vue page (target score ≥90)
 
@@ -124,16 +124,16 @@
 
 **Purpose**: Improvements that affect multiple user stories
 
-- [ ] T048 [P] Add active route highlighting to AppHeader.vue navigation using `aria-current="page"` and Tailwind styles
-- [ ] T049 [P] Ensure all navigation links in AppHeader.vue work correctly with file-based routes (/, /episodes, /about, /faq)
-- [ ] T050 [P] Add hover, focus, and active states to all interactive elements (links, buttons) across all components
-- [ ] T051 [P] Verify Traditional Chinese typography renders correctly with system font stack across all pages
+- [X] T048 [P] Add active route highlighting to AppHeader.vue navigation using `aria-current="page"` and Tailwind styles
+- [X] T049 [P] Ensure all navigation links in AppHeader.vue work correctly with file-based routes (/, /episodes, /about, /faq)
+- [X] T050 [P] Add hover, focus, and active states to all interactive elements (links, buttons) across all components
+- [X] T051 [P] Verify Traditional Chinese typography renders correctly with system font stack across all pages
 - [ ] T052 Test all 4 pages in Chrome, Firefox, Safari, Edge (latest 2 versions) for visual consistency
 - [ ] T053 Test all 4 pages at edge cases: 319px width, slow 3G network, with screen reader (NVDA or VoiceOver)
-- [ ] T054 Build production bundle with `vite build` and verify bundle size <50KB gzipped JavaScript
+- [X] T054 Build production bundle with `vite build` and verify bundle size <50KB gzipped JavaScript
 - [ ] T055 Run Lighthouse performance audit on production build (target scores: Performance ≥90, Accessibility ≥90, Best Practices ≥90)
 - [ ] T056 Verify First Contentful Paint <1.5s and Time to Interactive <3s on production build
-- [ ] T057 [P] Create deployment configuration files: public/_redirects for Netlify, vercel.json for Vercel (SPA fallback)
+- [X] T057 [P] Create deployment configuration files: public/_redirects for Netlify, vercel.json for Vercel (SPA fallback)
 - [ ] T058 Validate all steps in quickstart.md work correctly (clone, install, dev, build, preview)
 - [ ] T059 Perform final manual accessibility review: keyboard navigation, screen reader, color contrast, semantic HTML across all pages
 
