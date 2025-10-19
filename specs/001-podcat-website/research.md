@@ -78,10 +78,10 @@ export default {
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.0",
-    "@tailwindcss/vite": "^4.0.0",
+    "@tailwindcss/vite": "^4.1.0",
     "vite": "^7.0.0",
-    "typescript": "^5.6.0",
-    "tailwindcss": "^4.0.0"
+    "typescript": "^5.9.0",
+    "tailwindcss": "^4.1.0"
   }
 }
 ```
@@ -524,16 +524,16 @@ const formattedDate = computed(() => {
 ```json
 {
   "dependencies": {
-    "vue": "3.5.13",
-    "vue-router": "4.4.5"
+    "vue": "3.5.22",
+    "vue-router": "4.6.3"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "5.2.1",
-    "@tailwindcss/vite": "4.0.0",
-    "vite": "7.0.5",
-    "vite-plugin-pages": "0.32.3",
-    "typescript": "5.6.3",
-    "tailwindcss": "4.0.0"
+    "@vitejs/plugin-vue": "6.0.1",
+    "@tailwindcss/vite": "4.1.14",
+    "vite": "7.1.10",
+    "vite-plugin-pages": "0.33.1",
+    "typescript": "5.9.3",
+    "tailwindcss": "4.1.14"
   }
 }
 ```

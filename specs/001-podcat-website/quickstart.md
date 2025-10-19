@@ -44,16 +44,16 @@ yarn install
 這將安裝以下依賴：
 
 **生產依賴 (2)**:
-- `vue` (3.5.13) - Vue.js 框架
-- `vue-router` (4.4.5) - Vue 路由管理
+- `vue` (3.5.22) - Vue.js 框架
+- `vue-router` (4.6.3) - Vue 路由管理
 
 **開發依賴 (6)**:
-- `vite` (7.0.5) - 建置工具
-- `@vitejs/plugin-vue` (5.2.1) - Vue SFC 支援
-- `vite-plugin-pages` (0.32.3) - 檔案式路由自動生成
-- `typescript` (5.6.3) - TypeScript 編譯器
-- `tailwindcss` (4.0.0) - CSS 框架
-- `@tailwindcss/vite` (4.0.0) - Tailwind Vite 插件
+- `vite` (7.1.10) - 建置工具
+- `@vitejs/plugin-vue` (6.0.1) - Vue SFC 支援
+- `vite-plugin-pages` (0.33.1) - 檔案式路由自動生成
+- `typescript` (5.9.3) - TypeScript 編譯器
+- `tailwindcss` (4.1.14) - CSS 框架
+- `@tailwindcss/vite` (4.1.14) - Tailwind Vite 插件
 
 ---
 
