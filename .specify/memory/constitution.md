@@ -1,20 +1,18 @@
 <!--
 SYNC IMPACT REPORT
 ==================
-Version Change: N/A → 1.0.0
-Modified Principles: N/A (initial ratification)
-Added Sections:
-  - Core Principles (5 principles)
-  - Technical Constraints
-  - Development Workflow
-  - Governance
-Removed Sections: N/A
+Version Change: 1.0.0 → 1.1.0
+Modified Principles:
+  - Principle I (最小依賴原則 / Minimal Dependency Principle): Updated bullet point 6 from "僅允許使用純 HTML、CSS、JavaScript 及基本建置工具" to "僅允許使用最小依賴套件 (minimal dependencies packages)"
+  - Principle I rationale: Expanded to clarify minimal dependencies philosophy
+Added Sections: None
+Removed Sections: None
 Templates Requiring Updates:
-  ✅ plan-template.md - Constitution Check section present and ready
-  ✅ spec-template.md - Aligned with constitution requirements
-  ✅ tasks-template.md - Task categorization compatible
-  ✅ agent-file-template.md - No updates needed
-  ✅ checklist-template.md - No updates needed
+  ✅ plan-template.md - No updates required (Constitution Check section remains compatible)
+  ✅ spec-template.md - No updates required (requirements section remains compatible)
+  ✅ tasks-template.md - No updates required (task structure remains compatible)
+  ✅ agent-file-template.md - No updates required
+  ✅ checklist-template.md - No updates required
 Follow-up TODOs: None
 -->
 
@@ -33,9 +31,9 @@ Follow-up TODOs: None
 - 禁止整合資料庫（database integration）
 - 禁止使用程式碼檢查工具（linters）
 - 禁止使用測試框架（testing frameworks）
-- 僅允許使用純 HTML、CSS、JavaScript 及基本建置工具
+- 僅允許使用最小依賴套件（minimal dependencies packages）
 
-**理由**：保持專案輕量化、可維護性高，降低技術債務與相依性風險。每增加一個依賴項都會增加安全漏洞、版本衝突及長期維護成本。
+**理由**：保持專案輕量化、可維護性高，降低技術債務與相依性風險。每增加一個依賴項都會增加安全漏洞、版本衝突及長期維護成本。「最小依賴」意指僅引入絕對必要且經過審慎評估的套件，優先選擇零依賴或依賴樹極小的解決方案，並在技術決策流程中記錄每個依賴項的必要性。
 
 ### II. 響應式設計義務（不可協商）
 
@@ -208,4 +206,4 @@ Follow-up TODOs: None
 - 必須說明為何需要以及為何更簡單的方案不可行
 - 必須評估對「最小依賴原則」的影響
 
-**版本**: 1.0.0 | **核准日期**: 2025-10-19 | **最後修訂**: 2025-10-19
+**版本**: 1.1.0 | **核准日期**: 2025-10-19 | **最後修訂**: 2025-10-19

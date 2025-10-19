@@ -2,6 +2,7 @@
 
 ```bash
 /speckit.constitution static website with minimal dependencies, no image optimization libraries, no server-side rendering, no database integration, no linters, no testing frameworks, optimized for both mobile and desktop (responsive), compliant with accessibility standards, language in Traditional Chinese.
+/speckit.constitution Change "only pure HTML、CSS、JavaScript" to "only using minimal dependencies packages"
 
 /speckit.specify I want to create a modern design podcast website called Podcat, with a design that reflects current tech website trends and looks eye-catching. It needs a landing page, a episode list (contain 20 items with static data), an about page, and an FAQ page.
 
