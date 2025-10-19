@@ -148,7 +148,7 @@ export const getFAQByCategory = (): Record<string, FAQItem[]> => {
 
 ---
 
-### 3. AboutContent (關於內容區塊)
+### 3. AboutSection (關於內容區塊)
 
 Represents content sections for the About page.
 

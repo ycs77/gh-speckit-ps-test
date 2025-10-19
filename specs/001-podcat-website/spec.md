@@ -101,9 +101,10 @@
 ### Key Entities
 
 - **Episode（播客集數）**: 代表單一播客集數，包含屬性：標題、發布日期、簡短描述、集數編號
-- **NavigationItem（導覽項目）**: 代表網站導覽選單中的連結，包含屬性：顯示文字、目標頁面路徑、是否為當前頁面
 - **FAQItem（常見問題項目）**: 代表單一常見問題，包含屬性：問題文字、解答文字、分類標籤
-- **AboutContent（關於內容）**: 代表關於頁面的內容區塊，包含屬性：區塊標題、內容文字、區塊類型（簡介/團隊/理念）
+- **AboutSection（關於內容區塊）**: 代表關於頁面的內容區塊，包含屬性：區塊標題、內容文字、區塊類型（簡介/團隊/理念）
+
+**Note**: Navigation is handled via file-based routing (vite-plugin-pages). Routes are auto-generated from src/pages/ directory. Navigation links are hardcoded in AppHeader.vue component - no separate NavigationItem entity needed.
 
 ## Success Criteria *(mandatory)*
 
